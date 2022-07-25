@@ -1,0 +1,14 @@
+.statistics {
+  border: 1px solid #000000;
+  display: inline-flex;
+  flex-direction: column;
+  margin: 20px 0;
+  box-shadow: 5px 5px 5px;
+}
+.title {
+  text-align: center;
+  border-bottom: 1px solid #000000;
+}
+.statList {
+  display: flex;
+}

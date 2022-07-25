@@ -1,0 +1,32 @@
+.profile {
+  box-sizing: border-box;
+  width: 200px;
+  border: 1px solid #000000;
+  box-shadow: 5px 5px 5px;
+}
+.description {
+  background-color: #ffffff;
+  text-align: center;
+}
+.avatar {
+  border-radius: 50%;
+}
+.stats {
+  background-color: rgb(199, 193, 193);
+  display: flex;
+  justify-content: center;
+}
+.statsItem {
+  display: flex;
+
+  flex-direction: column;
+  margin-right: 10px;
+  text-align: center;
+}
+.name {
+  font-size: 700;
+}
+.tag {
+}
+.location {
+}

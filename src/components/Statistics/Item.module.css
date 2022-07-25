@@ -1,0 +1,9 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 10px;
+}
+/* .item:not(:nth-last-child) {
+  margin-right: 10px;
+} */
