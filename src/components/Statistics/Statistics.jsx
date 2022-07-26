@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import css from 'components/Statistics/Statistics.module.css';
-import { Title } from 'components/Statistics/Title';
+
 import { Item } from 'components/Statistics/Item';
 
-export function Statistics({ events }) {
+export function Statistics({ title, events }) {
   return (
     <div className={css.statistics}>
-      <Title text="Upload stats" />
+      {title && <h2 className={css.title}>{title}</h2>}
       <ul className={css.statList}>
         {events.map(({ id, label, percentage }) => {
           return <Item key={id} label={label} percentage={percentage} />;
@@ -24,4 +24,5 @@ Statistics.propTypes = {
       percentage: PropTypes.number.isRequired,
     })
   ),
+  title: PropTypes.string,
 };
